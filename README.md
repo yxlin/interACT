@@ -1,8 +1,8 @@
 # interACT
 
-This R package records my study note of the interACT software, a simulation tool
-of road crossing behaviour.  interACT implements two types of road users: a 
-pedestrian and a driver in two countries, UK and Japan. 
+This R package re-implement the interACT software in object-oriented S4 classes.
+interACT is a simulation tool for investigating road-crossing behaviour, both for
+pedestrians and drivers, assuming  traffic scenarios in either UK or Japan. 
 
 ![Crossing](https://github.com/yxlin/interACT/blob/master/figs/crossingscenarios.png).
 
@@ -12,7 +12,7 @@ pedestrian and a driver in two countries, UK and Japan.
 ```
 library(interACT)
 timeStep   <- 1/30
-endTime    <- 30 ## endTime    <- 2
+endTime    <- 30 
 ts <- seq(0, endTime, by = timeStep)
 
 v <- new("Pedestrian")
