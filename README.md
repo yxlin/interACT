@@ -1,6 +1,6 @@
 # interACT
 
-This R package re-implement the interACT software in object-oriented S4 classes.
+This package re-implements the interACT software in object-oriented S4 classes.
 interACT is a simulation tool for investigating road-crossing behaviour, both for
 pedestrians and drivers, assuming  traffic scenarios in either UK or Japan. 
 
