@@ -3,7 +3,8 @@
 This R package records my study note of the interACT software, a simulation tool
 of road crossing behaviour.   I  
 
-![Paradigm](/media/yslin/MERLIN/Documents/interACT/figs/crossingscenarios.png).
+![Crossing](https://github.com/yxlin/interACT/blob/master/figs/crossingscenarios.png).
+
 
 ## Getting Started
 
@@ -23,8 +24,14 @@ The package was written by [Yi-Shin Lin](mailto:yishinlin001@gmail.com).
 
 
 ## License
-MIT License]
+GPL3 
 
 ## Acknowledgments
+interACT is copyrighted (2019) to Gustav Markkula, Jami Pekkanen
+The software implemented in MATLAB is part of interACT road crossing models - 
+simulation software v1.1, abbreviated "interACT RCM" in associated documents.
+
+interACT is released under the GNU General Public License along with interACT RCM. 
+
 
 
