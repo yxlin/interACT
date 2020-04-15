@@ -1,12 +1,12 @@
 Package: interACT
 Type: Package
-Title: A Model of Evidence Accumulaton for the Behaviours of Road Users
+Title: A Model of simulating road-crossing behaviours.
 Version: 0.0.0.1
 Date: 2020-04-10
-Author: Yi-Shin Lin [aut, cre]
+Author: Yi-Shin Lin [aut, cre], Gustav Markkula [aut], Jami Pekkanen [aut]
 Maintainer: Yi-Shin Lin <yishinlin001@gmail.com>
-Description: The package provides tools to investigate road user behaviours, using a cognitive model.
-License: MIT
+Description: The package documents the structure of the MATLAB software, interACt and provides several unit testing scripts.
+License: GPL3
 URL: https://github.com/yxlin/interACT
 BugReports: https://github.com/yxlin/interACT/issues
 LazyData: TRUE
@@ -14,4 +14,3 @@ Depends: R (>= 3.3.0)
 Suggests: testthat
 RoxygenNote: 6.1.1
 Encoding: UTF-8
-
