@@ -6,10 +6,29 @@
 \alias{GetInitialPositionOfCrossingRoadUser,Pedestrian-method}
 \title{An S4 method for GetInitialPositionOfCrossingRoadUser}
 \usage{
-GetInitialPositionOfCrossingRoadUser(x, idx, ...)
+GetInitialPositionOfCrossingRoadUser(x, ...)
 
 \S4method{GetInitialPositionOfCrossingRoadUser}{Pedestrian}(x)
 }
+\arguments{
+\item{x}{a Pedestrian or Driver object}
+}
+\value{
+a two-element list, storing initialX and initialY
+}
 \description{
-Details of the method
+GetScenarioConstants.m spedifies four different fGetCrossingOnsetTimePDF's,
+linking to GetModelCrossingOnsetTimePDF.m, which calls 
+GetLongDistanceFromCrosserInitialPosToApproacherFront.m.
+}
+\details{
+GetLongDistanceFromCrosserInitialPosToApproacherFront.m. then calls
+GetInitialPositionOfCrossingRoadUser.m.
+}
+\examples{
+v <- new("Pedestrian", 
+         sCountry = 'UK',
+         sScenarioName = 'Pedestrian crossing UK')
+ans <- GetInitialPositionOfCrossingRoadUser(v)
+print(unlist(ans))
 }

@@ -4,12 +4,17 @@
 \alias{SimulateCrossingScenario}
 \title{SimulateCrossingScenario - run interACT road crossing model simulation}
 \usage{
-SimulateCrossingScenario(x, VTimeStamp)
+SimulateCrossingScenario(x, VTimeStamp, nSimulations)
 }
 \arguments{
 \item{x}{a Pedestrian or a Driver}
 
 \item{VTimeStamp}{a time vector}
+
+\item{nSimulations}{number of simulations, an integer.}
+}
+\value{
+a list
 }
 \description{
 SimulateCrossingScenario - run interACT road crossing model simulation

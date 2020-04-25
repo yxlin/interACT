@@ -5,7 +5,8 @@
 \alias{Pedestrian-class}
 \title{An S4 class for a Pedestrian}
 \description{
-Details of the class...
+A pedestrian has his/her country origin, whether crossing road 
+('Pedestrian crossing UK') or driving to turn right ('Driver right turn').
 }
 \section{Slots}{
 
@@ -28,7 +29,9 @@ Details of the class...
 
 \item{\code{awidth}}{a floating point scalar for approaching.}
 
-\item{\code{fGetApproachBehaviour}}{a function}
+\item{\code{fGetApproachBehaviour}}{a function linking to 
+GetConstantDecelerationVehicleApproachBehaviour.m. This function seems 
+independent of countries, pedestrian and driver.}
 
 \item{\code{fAdaptToCrossingBehaviour}}{a function}
 

@@ -12,10 +12,15 @@ GetModelCrossingOnsetTimePDF(x, ...)
   SApproachingRoadUserBehaviour)
 }
 \arguments{
-\item{SCrossingRoadUserConstants}{a S4 class declared in model-class.R}
+\item{x}{a Pedestrian or a Driver object}
+
+\item{SApproachingRoadUserBehaviour}{a Behaviour object storing approaching
+road user behaviour.}
+
+\item{VTimeStampe}{a time vecotr}
 }
 \value{
-a vector perhaps
+a vector perhaps?
 }
 \description{
 Linking to fGetCrossingOnsetTimePDF.

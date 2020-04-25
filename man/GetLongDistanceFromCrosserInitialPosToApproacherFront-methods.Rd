@@ -6,23 +6,39 @@
 \alias{GetLongDistanceFromCrosserInitialPosToApproacherFront,Pedestrian-method}
 \title{Found in GetLongDistanceFromCrosserInitialPosToApproacherFront}
 \usage{
-GetLongDistanceFromCrosserInitialPosToApproacherFront(x, ...)
+GetLongDistanceFromCrosserInitialPosToApproacherFront(x, aBehaviour, ...)
 
 
   \S4method{GetLongDistanceFromCrosserInitialPosToApproacherFront}{Pedestrian}(x,
-  SApproachingRoadUserBehaviour)
+  aBehaviour)
 }
 \arguments{
 \item{x}{an object of Pedestrian or Driver}
+
+\item{aBehaviour}{a Behaviour object storing SApproachingRoadUserBehaviour}
 }
 \value{
-a floating point scalar
+a floating point vector
 }
 \description{
-Found in GetLongDistanceFromCrosserInitialPosToApproacherFront
+GetScenarioConstants.m spedifies four different fGetCrossingOnsetTimePDF's,
+linking to GetModelCrossingOnsetTimePDF.m, which calls 
+GetLongDistanceFromCrosserInitialPosToApproacherFront.m.
+}
+\details{
+GetLongDistanceFromCrosserInitialPosToApproacherFront.m. then calls
+GetInitialPositionOfCrossingRoadUser.m.
 }
 \examples{
 timeStep   <- 1/30
 endTime    <- 30 ## endTime    <- 2
 VTimeStamp <- seq(0, endTime, by = timeStep)
+
+v0 <- new("Pedestrian", 
+          sCountry = 'UK',
+          sScenarioName = 'Pedestrian crossing UK')
+
+aB <- v0@fGetApproachBehaviour(VTimeStamp)
+ans <- GetLongDistanceFromCrosserInitialPosToApproacherFront(v0, aB)
+
 }
