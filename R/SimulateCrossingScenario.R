@@ -1,3 +1,5 @@
+##' Get a rotation matrix
+##' 
 ##' Get a matrix M for rotating a 2D column vector X by the input parameter 
 ##' angle around the origin
 ##' 
@@ -10,11 +12,11 @@ Get2DRotationMatrix <- function(x) {
 
 ##' AddRoadUserCornerMatrices.m
 ##' 
-##' add a field MCornerMatrices, describing the locations of the four corners 
-##' of the road user over time in the scenario, to the input/output structure
-##' SRoadUserBehaviour, based on the VX, VY, and VHeading fields of that 
-##' structure, and the fields length and width of the SRoadUserConstants 
-##' input structure
+##' add a field MCornerMatrices, describing the locations of the four
+##' corners of the road user over time in the scenario, to the 
+##' input/output structure SRoadUserBehaviour, based on the VX, VY, and
+##' VHeading fields of that structure, and the fields length and width of
+##' the SRoadUserConstants input structure
 ##' 
 ##' @param x a Pedestrian or a Driver object
 ##' @param b a Behaviour object 

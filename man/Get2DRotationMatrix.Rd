@@ -2,8 +2,7 @@
 % Please edit documentation in R/SimulateCrossingScenario.R
 \name{Get2DRotationMatrix}
 \alias{Get2DRotationMatrix}
-\title{Get a matrix M for rotating a 2D column vector X by the input parameter 
-angle around the origin}
+\title{Get a rotation matrix}
 \usage{
 Get2DRotationMatrix(x)
 }

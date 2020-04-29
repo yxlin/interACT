@@ -4,6 +4,7 @@ Sys.setenv("R_TESTS" = "")
 
 library(testthat)
 library(data.table)
+library(R.matlab)
 library(interACT)
 
 cat("Start running testthat in the directory: ")
@@ -11,6 +12,7 @@ cat(getwd(), "\n")
 
 cat("\n========================== Group 0 tests ==========================\n")
 test_file(path = "Group0/test_fGetApproachBehaviour.R")
+test_file(path = "Group0/test_GettingStarted.R")
 
 cat("\n========================== Group 1 tests ==========================\n")
 test_file(path = "Group1/test_fGetCrossingTrajectory.R")
