@@ -7,6 +7,11 @@ Japan.
 
 ![Crossing](https://github.com/yxlin/interACT/blob/master/figs/crossingscenarios.png).
 
+## Installation
+
+```
+devtools::install_github('yxlin/interACT')
+```
 
 ## Getting Started
 
@@ -19,8 +24,6 @@ ts <- seq(0, endTime, by = timeStep)
 v   <- new("Pedestrian")
 res <- SimulateCrossingScenario(v, ts, 50)
 ```
-
-
 ## Contributors
 The package was written by [Yi-Shin Lin](mailto:yishinlin001@gmail.com).
 
